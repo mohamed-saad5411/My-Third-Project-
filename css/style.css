@@ -1,0 +1,295 @@
+:root {
+    --main-color: white;
+    --hover-color: #f25454;
+}
+
+/* ................... 1 header..................... */
+#home .main-head h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+#home .main-head{
+    top: 0%;
+    left: 0%;
+}
+.mouse-shape{
+    width: 1.8rem;
+    height: 3.2rem;
+    bottom: 5%;
+    left: 50%;
+    transition: all 0.5s;
+}
+.circle-mouse{
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: white;
+    top: 20%;
+    transition: all 0.5s;
+    animation: mouse-move 2s both infinite;
+}
+@keyframes mouse-move {
+    0% {
+        top: 20%;
+        opacity: 0;
+    }
+    15% {
+        top: 25%;
+        opacity: 0;
+    }
+    30% {
+        top: 30%;
+        opacity: 0;
+    }
+    45% {
+        top: 35%;
+        opacity: 1;
+    }
+    60% {
+        top: 40%;
+        opacity: 1;
+    }
+    75% {
+        top: 45%;
+        opacity: 1;
+    }
+    90% {
+        top: 50%;
+        opacity: 1;
+    }
+    100% {
+        top: 55%;
+        opacity: 0;
+    }
+}
+.mouse-shape:hover .circle-mouse{
+    background-color: var(--hover-color);
+}
+.mouse-shape:hover  {
+    border-color: var(--hover-color) !important;
+}
+#home .carousel-control-next,#home .carousel-control-prev {
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border: 0.1rem solid white;
+    background-color: transparent;
+}
+.head-btn{
+    position: absolute;
+    top: 50%;
+    height: 6rem;
+}
+#home .carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    position: relative;
+}
+
+.btn-gear{
+    top: 25%;
+    background-color: black;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#home h1 {
+    font-size: 4rem;
+}
+
+#home .head-icon a:hover {
+    color: var(--hover-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--hover-color);
+}
+
+.nav-link {
+    color: var(--main-color);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--hover-color);
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+
+
+
+/* ................... 2 about..................... */
+.trans>h2 {
+    font-size: 5rem;
+    opacity: 0.1;
+}
+
+.trans::after {
+    content: "";
+    background-color: black;
+    width: 3rem;
+    height: 0.08rem;
+    transition: all 0.75s;
+
+}
+
+.about-head-custom {
+    bottom: 8%;
+}
+
+.about-head:hover .trans::after {
+    width: 5rem;
+}
+
+.progress-custom {
+    height: 0.25rem;
+}
+
+.progress-bar {
+    background-color: var(--hover-color);
+}
+
+.text-custom {
+    font-weight: 600;
+}
+
+.position-custom-20 {
+    right: 20%;
+}
+
+.position-custom-5 {
+    right: 5%;
+}
+
+.position-custom-15 {
+    right: 15%;
+}
+
+.position-custom-30 {
+    right: 30%;
+}
+
+/* ................... 3 team..................... */
+#team .layer {
+    background-color: rgba(242, 84, 84, 0.8);
+    opacity: 0;
+}
+
+#team .layer,
+#team .members h5,
+#team .member img,
+.say-hello a,
+.btn-custom,
+.contact-custom h5,
+.foot a,
+.footer-icon i,
+.service-icons h5 {
+    transition: all 0.5s;
+}
+
+#team .members:hover .layer {
+    opacity: 1;
+}
+
+#team .members:hover h5 {
+    color: var(--hover-color);
+}
+
+#team .members:hover img {
+    transform: scale(1.1);
+}
+
+.btn-custom {
+    background-color: var(--hover-color);
+}
+
+.btn:hover {
+    background-color: rgba(224, 117, 117, 0.8);
+}
+
+
+/* ................... 4 service..................... */
+
+
+.service-icon i {
+    color: var(--hover-color);
+}
+
+.service-icons:hover h5 {
+    color: var(--hover-color);
+}
+
+/* ................... 5 blog..................... */
+
+.carousel-indicators [data-bs-target]{
+    width: 10rem;
+    height: 10rem;
+    text-indent: 0;
+    background-color: transparent;
+}
+
+/* ................... 6 contact..................... */
+
+.form-control:focus {
+    border-color: var(--hover-color);
+    box-shadow: none;
+    border-width: 0.2rem;
+}
+
+.say-hello a:hover {
+    color: var(--hover-color) !important;
+}
+
+.contact-custom:hover h5 {
+    color: var(--hover-color);
+}
+
+.btn-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: aqua;
+}
+
+.foot a:hover {
+    color: var(--hover-color) !important;
+}
+.my-skills{
+    width: 100%;
+}
+.my-skills p{
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.5s;
+}
+.my-skills p:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+.footer{
+    background-color: #222;
+    background-image: url(../images/dotted-map.png);
+    background-position: center;
+    background-size: contain;
+}
+.foot p ,.foot a{
+    color: #b0b0b0 ;
+}
+.border-custom{
+    border: 1px #b0b0b0 solid;
+    border-radius: 0.4rem;
+}
+.footer-icon a:hover i{
+    color: var(--hover-color) !important;
+}
+.carousel-icon{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--hover-color);
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.carousel-icon:hover{
+    opacity: 1;
+}
